@@ -50,7 +50,7 @@ async def start(client, message):
             InlineKeyboardButton('🧑‍💻 sᴜᴘᴘᴏʀᴛ', url=SUPPORT_LINK)
         ],[
             InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
-            InlineKeyboardButton('🔎 sᴇᴀʀᴄʜ ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
+            InlineKeyboardButton('🔎 Recherche ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='about')
         ],[
             InlineKeyboardButton('💰 ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ 💰', callback_data='earn')
@@ -66,8 +66,8 @@ async def start(client, message):
 
     if len(message.command) == 2 and message.command[1] == "plans":
         btn = [            
-            [InlineKeyboardButton("ꜱᴇɴᴅ ᴘᴀʏᴍᴇɴᴛ ʀᴇᴄᴇɪᴘᴛ 🧾", url=OWNER_USERNAME)],
-            [InlineKeyboardButton("⚠️ ᴄʟᴏsᴇ / ᴅᴇʟᴇᴛᴇ ⚠️", callback_data="close_data")]
+            [InlineKeyboardButton("Envoyer preuve de paiement 🧾", url=OWNER_USERNAME)],
+            [InlineKeyboardButton("⚠️ Fermer ⚠️", callback_data="close_data")]
         ]
         reply_markup = InlineKeyboardMarkup(btn)
         await message.reply_photo(
@@ -90,7 +90,7 @@ async def start(client, message):
             reply_markup = None
         else:
             btn = [[
-                InlineKeyboardButton("📌 Get File 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
+                InlineKeyboardButton("📌 Récupérer le fichier 📌", url=f'https://t.me/{temp.U_NAME}?start={verify_status["link"]}')
             ]]
             reply_markup = InlineKeyboardMarkup(btn)
         await message.reply(f"✅ You successfully verified until: {get_readable_time(VERIFY_EXPIRE)}", reply_markup=reply_markup, protect_content=True)
@@ -103,7 +103,7 @@ async def start(client, message):
             await update_verify_status(message.from_user.id, verify_token=token, link="" if mc == 'inline_verify' else mc)
             link = await get_shortlink(SHORTLINK_URL, SHORTLINK_API, f'https://t.me/{temp.U_NAME}?start=verify_{token}')
             btn = [[
-                InlineKeyboardButton("🧿 Verify 🧿", url=link)
+                InlineKeyboardButton("🧿 Vérifier 🧿", url=link)
             ],[
                 InlineKeyboardButton('🗳 Tutorial 🗳', url=VERIFY_TUTORIAL)
             ]]
@@ -116,12 +116,12 @@ async def start(client, message):
             btn = await is_subscribed(client, message, settings['fsub'])
             if btn:
                 btn.append(
-                    [InlineKeyboardButton("🔁 Try Again 🔁", callback_data=f"checksub#{mc}")]
+                    [InlineKeyboardButton("🔁 Ressayer 🔁", callback_data=f"checksub#{mc}")]
                 )
                 reply_markup = InlineKeyboardMarkup(btn)
                 await message.reply_photo(
                     photo=random.choice(PICS),
-                    caption=f"👋 Hello {message.from_user.mention},\n\nPlease join my 'Updates Channel' and try again. 😇",
+                    caption=f"👋 Hello {message.from_user.mention},\n\nRejoins ma chaîne puis réessaie. 😇",
                     reply_markup=reply_markup,
                     parse_mode=enums.ParseMode.HTML
                 )
