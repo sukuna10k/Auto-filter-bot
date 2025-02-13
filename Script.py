@@ -130,9 +130,9 @@ Je ne trouve pas <b>{}</b> dans ma base de données ! 🥲
 
 - Ce bot est un projet open source.
 
-- Source - <a href=https://github.com/HA-Bots/Auto-Filter-Bot>ici</a>
+- Source - <a href=https://t.me/bot_kingdox>ici</a>
 
-- Développeur - @HA_Bots"""
+- Développeur - @Kingcey"""
 
     PREMIUM_PLAN_TEXT = """<b><i><u>- Plans disponibles - </u>
 
