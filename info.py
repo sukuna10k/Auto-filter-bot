@@ -80,7 +80,7 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/Otakukingcey1")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Kingcey")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 1800)) # Add time in seconds
+DELETE_TIME = int(environ.get('DELETE_TIME', 2800)) # Add time in seconds
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 20))
 LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'French hindi english telugu tamil kannada malayalam marathi punjabi').split()]
@@ -99,7 +99,7 @@ IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 IS_VERIFY = is_enabled('IS_VERIFY', False)
 AUTO_DELETE = is_enabled('AUTO_DELETE', False)
 WELCOME = is_enabled('WELCOME', True)
-PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', True)
+PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
 LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
