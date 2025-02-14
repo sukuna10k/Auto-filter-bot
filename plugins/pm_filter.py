@@ -486,7 +486,7 @@ async def advantage_spoll_choker(bot, query):
         k = (search, files, offset, total_results)
         await auto_filter(bot, query, s, k)
     else:
-        k = await query.message.edit(f"👋 Hello {query.from_user.mention},\n\nI don't find <b>'{search}'</b> in my database. 😔")
+        k = await query.message.edit(f"👋 Hello {query.from_user.mention},\n\nJ'ai pas trouvé <b>'{search}'</b> dans ma base de donnés contact @kingcey. 😔")
         await asyncio.sleep(60)
         await k.delete()
         try:
@@ -610,8 +610,6 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('👨‍🚒 ʜᴇʟᴘ', callback_data='help'),
             InlineKeyboardButton('🔎 ɪɴʟɪɴᴇ', switch_inline_query_current_chat=''),
             InlineKeyboardButton('📚 ᴀʙᴏᴜᴛ', callback_data='about')
-        ],[
-            InlineKeyboardButton('💰 ᴇᴀʀɴ ᴜɴʟɪᴍɪᴛᴇᴅ ᴍᴏɴᴇʏ ʙʏ ʙᴏᴛ 💰', callback_data='earn')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
