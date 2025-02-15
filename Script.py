@@ -3,15 +3,15 @@ class script(object):
     START_TXT = """<b>Salut {}, <i>{}</i>
     
 Je suis un puissant bot de filtrage automatique avec un raccourcisseur de liens. 
-Vous pouvez l'utiliser comme filtre automatique avec un raccourcisseur de liens dans votre groupe. 
-C'est simple à utiliser : je suis uniquement là pour te fournir des films et des séries.\n\nPar @AntiFlix_A... ♻️</b>"""
+Vous pouvez l'utiliser comme filtre automatique avec un raccourcisseur de liens
+C'est simple à utiliser : je suis uniquement là pour te fournir des films, des séries, des Animes, Miraculous et tout autres.\n\nPar @AntiFlix_A... ♻️</b>"""
 
     MY_ABOUT_TXT = """★ Serveur : <a href=https://www.heroku.com>Heroku</a>
 ★ Base de données : <a href=https://www.mongodb.com>MongoDB</a>
 ★ Langage : <a href=https://www.python.org>Python</a>
 ★ Librairie : <a href=https://pyrogram.org>Pyrogram</a>"""
 
-    MY_OWNER_TXT = """★ Nom : HA Bots
+    MY_OWNER_TXT = """★ Nom : 🇰ιηg¢єу
 ★ Nom d’utilisateur : @Kingcey
 ★ Ville : Lomé 🇹🇬"""
 
@@ -131,6 +131,8 @@ Je ne trouve pas <b>{}</b> dans ma base de données ! 🥲
 - Ce bot est un projet open source.
 
 - Source - <a href=https://t.me/bot_kingdox>ici</a>
+
+vous pouvez également acheté ce bot 
 
 - Développeur - @Kingcey"""
 
