@@ -34,10 +34,10 @@ if len(BOT_TOKEN) == 0:
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot pics
-PICS = (environ.get('PICS', 'https://envs.sh/fCc.jpg https://envs.sh/fhw.jpg https://envs.sh/Hzh.jpg https://envs.sh/HzQ.jpg https://envs.sh/Nya.jpg https://envs.sh/JNK.jpg')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/fCc.jpg https://envs.sh/fhw.jpg https://envs.sh/Hzh.jpg https://envs.sh/HzQ.jpg https://envs.sh/Nya.jpg https://envs.sh/JNK.jpg https://envs.sh/Ea4.jpg https://envs.sh/EaU.jpg https://envs.sh/Eal.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '7428552084')
+ADMINS = environ.get('ADMINS', '7428552084 5814104129')
 if len(ADMINS) == 0:
     print('Error - ADMINS is missing, exiting now')
     exit()
@@ -45,7 +45,7 @@ else:
     ADMINS = [int(admins) for admins in ADMINS.split()]
 
 # Channels
-INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1002491166640').split()]
+INDEX_CHANNELS = [int(index_channels) if index_channels.startswith("-") else index_channels for index_channels in environ.get('INDEX_CHANNELS', '-1002491166640 -1002143967853 -1002488233862 -1002241895434 -1002178700944').split()]
 if len(INDEX_CHANNELS) == 0:
     print('Info - INDEX_CHANNELS is empty')
 LOG_CHANNEL = environ.get('LOG_CHANNEL', '-1002376378205')
@@ -80,10 +80,10 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/Otakukingcey1")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Kingcey")
 
 # Bot settings
-DELETE_TIME = int(environ.get('DELETE_TIME', 2800)) # Add time in seconds
+DELETE_TIME = int(environ.get('DELETE_TIME', 14400)) # Add time in seconds
 CACHE_TIME = int(environ.get('CACHE_TIME', 300))
 MAX_BTN = int(environ.get('MAX_BTN', 20))
-LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'French hindi english telugu tamil kannada malayalam marathi punjabi').split()]
+LANGUAGES = [language.lower() for language in environ.get('LANGUAGES', 'French vostfr japonnais').split()]
 QUALITY = [quality.lower() for quality in environ.get('QUALITY', '360p 480p 720p 1080p 2160p').split()]
 IMDB_TEMPLATE = environ.get("IMDB_TEMPLATE", script.IMDB_TEMPLATE)
 FILE_CAPTION = environ.get("FILE_CAPTION", script.FILE_CAPTION)
@@ -91,13 +91,13 @@ SHORTLINK_URL = environ.get("SHORTLINK_URL", "mdiskshortner.link")
 SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915443501")
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
-INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv').split()]
+INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv avi').split()]
 PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '1800'))
 
 # boolean settings
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 IS_VERIFY = is_enabled('IS_VERIFY', False)
-AUTO_DELETE = is_enabled('AUTO_DELETE', False)
+AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 WELCOME = is_enabled('WELCOME', True)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
