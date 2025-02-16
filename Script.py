@@ -13,6 +13,7 @@ C'est simple à utiliser : je suis uniquement là pour te fournir des films, des
 
     MY_OWNER_TXT = """★ Nom : 🇰ιηg¢єу
 ★ Nom d’utilisateur : @Kingcey
+★ Pour tout problème contacter mes administrateurs
 ★ Ville : Lomé 🇹🇬"""
 
     STATUS_TXT = """🗂 Total de fichiers : <code>{}</code>
