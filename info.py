@@ -27,7 +27,7 @@ API_HASH = environ.get('API_HASH', 'acd9f0cc6beb08ce59383cf250052686')
 if len(API_HASH) == 0:
     print('Error - API_HASH is missing, exiting now')
     exit()
-BOT_TOKEN = environ.get('BOT_TOKEN', '7888675811:AAElmv76MqTatJujogp76f3ilTxm65IYHO0')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7783135016:AAEIvV1C11-UCJR3-YbCBiHFksXfZbzoxxE')
 if len(BOT_TOKEN) == 0:
     print('Error - BOT_TOKEN is missing, exiting now')
     exit()
@@ -95,8 +95,8 @@ INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTE
 PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '14400'))
 
 # boolean settings
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
-IS_VERIFY = is_enabled('IS_VERIFY', True)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
+IS_VERIFY = is_enabled('IS_VERIFY', False)
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 WELCOME = is_enabled('WELCOME', True)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
