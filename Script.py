@@ -134,6 +134,9 @@ Je ne trouve pas <b>{}</b> dans ma base de données ! 🥲
 - Source - <a href=https://t.me/bot_kingdox>ici</a>
 
 vous pouvez également acheté ce bot 
+Ceci est un projet open source.
+
+Tous les fichiers dans ce bot sont librement disponibles sur Internet ou publiés par quelqu'un d'autre. Juste pour faciliter la recherche, ce bot indexe des fichiers qui sont déjà téléchargés sur Telegram. Nous respectons toutes les lois sur le droit d'auteur et travaillons en conformité avec le DMCA et l'EUCD. Si quelque chose est contraire à la loi, veuillez me contacter afin qu'il puisse être retiré dès que possible. Il est interdit de télécharger, diffuser, reproduire, partager ou consommer du contenu sans la permission explicite du créateur de contenu ou du titulaire de droits d'auteur légal. Si vous pensez que ce bot viole votre propriété intellectuelle, contactez les chaînes respectives pour le retrait. Le bot ne possède aucun de ces contenus, il indexe uniquement les fichiers provenant de Telegram
 
 - Développeur - @Kingcey"""
 
