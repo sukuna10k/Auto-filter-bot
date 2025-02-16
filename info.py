@@ -27,7 +27,7 @@ API_HASH = environ.get('API_HASH', 'acd9f0cc6beb08ce59383cf250052686')
 if len(API_HASH) == 0:
     print('Error - API_HASH is missing, exiting now')
     exit()
-BOT_TOKEN = environ.get('BOT_TOKEN', '7783135016:AAEDA3NoMMtHpgjf5CroaQAHMkP-VC859k0')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7888675811:AAElmv76MqTatJujogp76f3ilTxm65IYHO0')
 if len(BOT_TOKEN) == 0:
     print('Error - BOT_TOKEN is missing, exiting now')
     exit()
@@ -92,11 +92,11 @@ SHORTLINK_API = environ.get("SHORTLINK_API", "36f1ae74ba1aa01e5bd73bdd0bc22aa915
 VERIFY_EXPIRE = int(environ.get('VERIFY_EXPIRE', 86400)) # Add time in seconds
 WELCOME_TEXT = environ.get("WELCOME_TEXT", script.WELCOME_TEXT)
 INDEX_EXTENSIONS = [extensions.lower() for extensions in environ.get('INDEX_EXTENSIONS', 'mp4 mkv avi').split()]
-PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '1800'))
+PM_FILE_DELETE_TIME = int(environ.get('PM_FILE_DELETE_TIME', '14400'))
 
 # boolean settings
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
-IS_VERIFY = is_enabled('IS_VERIFY', False)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
+IS_VERIFY = is_enabled('IS_VERIFY', True)
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 WELCOME = is_enabled('WELCOME', True)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
