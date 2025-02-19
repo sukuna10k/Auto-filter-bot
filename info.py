@@ -27,7 +27,7 @@ API_HASH = environ.get('API_HASH', 'acd9f0cc6beb08ce59383cf250052686')
 if len(API_HASH) == 0:
     print('Error - API_HASH is missing, exiting now')
     exit()
-BOT_TOKEN = environ.get('BOT_TOKEN', '7783135016:AAEuE4O5WM2I09QzM44dxMjb0oWhtmIxvBQ')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7783135016:AAFrt6XX7ifliagYO5EGrLOPiXYOEHPJq8o')
 if len(BOT_TOKEN) == 0:
     print('Error - BOT_TOKEN is missing, exiting now')
     exit()
@@ -37,7 +37,7 @@ PORT = int(environ.get('PORT', '8080'))
 PICS = (environ.get('PICS', 'https://envs.sh/fCc.jpg https://envs.sh/fhw.jpg https://envs.sh/Hzh.jpg https://envs.sh/HzQ.jpg https://envs.sh/Nya.jpg https://envs.sh/JNK.jpg https://envs.sh/Ea4.jpg https://envs.sh/EaU.jpg https://envs.sh/Eal.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '7428552084 5814104129')
+ADMINS = environ.get('ADMINS', '7428552084 5814104129 1740287480')
 if len(ADMINS) == 0:
     print('Error - ADMINS is missing, exiting now')
     exit()
@@ -74,7 +74,7 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 # Links
 SUPPORT_LINK = environ.get('SUPPORT_LINK', 'https://t.me/Antiflix_d')
 OWNER_USERNAME = environ.get("OWNER_USERNAME", "https://t.me/kingcey")
-UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/bot_kingdox')
+UPDATES_LINK = environ.get('UPDATES_LINK', 'https://t.me/BotZFlix')
 FILMS_LINK = environ.get('FILMS_LINK', 'https://t.me/AntiFlix_A')
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/Otakukingcey1")
 VERIFY_TUTORIAL = environ.get("VERIFY_TUTORIAL", "https://t.me/Kingcey")
