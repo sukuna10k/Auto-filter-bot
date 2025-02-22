@@ -27,17 +27,17 @@ API_HASH = environ.get('API_HASH', 'acd9f0cc6beb08ce59383cf250052686')
 if len(API_HASH) == 0:
     print('Error - API_HASH is missing, exiting now')
     exit()
-BOT_TOKEN = environ.get('BOT_TOKEN', '7783135016:AAFrt6XX7ifliagYO5EGrLOPiXYOEHPJq8o')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7902142337:AAGz56ohMW9BT9hsD-imfGa7ISROWgc7Tj0')
 if len(BOT_TOKEN) == 0:
     print('Error - BOT_TOKEN is missing, exiting now')
     exit()
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot pics
-PICS = (environ.get('PICS', 'https://envs.sh/fCc.jpg https://envs.sh/fhw.jpg https://envs.sh/Hzh.jpg https://envs.sh/HzQ.jpg https://envs.sh/Nya.jpg https://envs.sh/JNK.jpg https://envs.sh/Ea4.jpg https://envs.sh/EaU.jpg https://envs.sh/Eal.jpg')).split()
+PICS = (environ.get('PICS', 'https://envs.sh/fCc.jpg https://envs.sh/fhw.jpg https://envs.sh/Hzh.jpg https://envs.sh/HzQ.jpg https://envs.sh/Nya.jpg https://envs.sh/JNK.jpg https://envs.sh/Ea4.jpg https://envs.sh/EaU.jpg https://envs.sh/Eal.jpg https://envs.sh/Ffb.jpg https://envs.sh/Ffe.jpg https://envs.sh/Ffi.jpg https://envs.sh/Ffe.jpg https://envs.sh/Fft.jpg https://envs.sh/Ffu.jpg https://envs.sh/Ffd.jpg https://envs.sh/FfQ.jpg https://envs.sh/Ffd.jpg https://envs.sh/Fg-.jpg')).split()
 
 # Bot Admins
-ADMINS = environ.get('ADMINS', '7428552084 5814104129 1740287480')
+ADMINS = environ.get('ADMINS', '7428552084')
 if len(ADMINS) == 0:
     print('Error - ADMINS is missing, exiting now')
     exit()
@@ -104,7 +104,7 @@ LONG_IMDB_DESCRIPTION = is_enabled("LONG_IMDB_DESCRIPTION", False)
 LINK_MODE = is_enabled("LINK_MODE", True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 IMDB = is_enabled('IMDB', True)
-SPELL_CHECK = is_enabled("SPELL_CHECK", True)
+SPELL_CHECK = is_enabled("SPELL_CHECK", False)
 SHORTLINK = is_enabled('SHORTLINK', False)
 
 #premium info
@@ -112,7 +112,7 @@ PAYMENT_QR = environ.get('PAYMENT_QR', 'https://envs.sh/fCZ.jpg')
 OWNER_UPI_ID = environ.get('OWNER_UPI_ID', '141481999001')
 
 # for stream
-IS_STREAM = is_enabled('IS_STREAM', True)
+IS_STREAM = is_enabled('IS_STREAM', False)
 BIN_CHANNEL = environ.get("BIN_CHANNEL", "-1002491166640")
 if len(BIN_CHANNEL) == 0:
     print('Error - BIN_CHANNEL is missing, exiting now')
