@@ -4,7 +4,7 @@ class script(object):
     
 Je suis un puissant bot de filtrage automatique avec un raccourcisseur de liens. 
 Vous pouvez l'utiliser comme filtre automatique avec un raccourcisseur de liens
-C'est simple à utiliser : je suis uniquement là pour te fournir des films, des séries, des Animes, Miraculous et tout autres.\n\nPar @AntiFlix_A... ♻️</b>"""
+C'est simple à utiliser : je suis uniquement là pour te fournir des films, des séries, des Animes, Miraculous et tout autres.\n\n<blockquote>Maintenu Par @BotZFlix</blockquote>... ♻️</b>"""
 
     MY_ABOUT_TXT = """★ Serveur : <a href=https://www.heroku.com>Heroku</a>
 ★ Base de données : <a href=https://www.mongodb.com>MongoDB</a>
@@ -32,7 +32,7 @@ Total - <code>{}</code>"""
 
     NEW_USER_TXT = """#NouvelUtilisateur
 ★ Nom : {}
-★ ID : <code>{}</code>"""
+★ ID : <code>{}</code> @Sdbe_bot"""
 
     NOT_FILE_TXT = """👋 Bonjour {},
 
@@ -131,7 +131,7 @@ Je ne trouve pas <b>{}</b> dans ma base de données ! 🥲
 
 - Ce bot est un projet open source.
 
-- Source - <a href=https://t.me/bot_kingdox>ici</a>
+- Source - <a href=https://t.me/BotZFlix>ici</a>
 
 vous pouvez également acheté ce bot 
 Ceci est un projet open source.
