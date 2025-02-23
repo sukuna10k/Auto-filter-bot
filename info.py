@@ -31,7 +31,7 @@ BOT_TOKEN = environ.get('BOT_TOKEN', '7902142337:AAGz56ohMW9BT9hsD-imfGa7ISROWgc
 if len(BOT_TOKEN) == 0:
     print('Error - BOT_TOKEN is missing, exiting now')
     exit()
-PORT = int(environ.get('PORT', '8080'))
+PORT = int(environ.get('PORT', '5000'))
 
 # Bot pics
 PICS = (environ.get('PICS', 'https://envs.sh/fCc.jpg https://envs.sh/fhw.jpg https://envs.sh/Hzh.jpg https://envs.sh/HzQ.jpg https://envs.sh/Nya.jpg https://envs.sh/JNK.jpg https://envs.sh/Ea4.jpg https://envs.sh/EaU.jpg https://envs.sh/Eal.jpg https://envs.sh/Ffb.jpg https://envs.sh/Ffe.jpg https://envs.sh/Ffi.jpg https://envs.sh/Ffe.jpg https://envs.sh/Fft.jpg https://envs.sh/Ffu.jpg https://envs.sh/Ffd.jpg https://envs.sh/FfQ.jpg https://envs.sh/Ffd.jpg https://envs.sh/Fg-.jpg')).split()
